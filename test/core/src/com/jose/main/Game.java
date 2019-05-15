@@ -29,7 +29,7 @@ public class Game extends ApplicationAdapter {
 
 
 	ArrayList<Box> pipes;
-	float gravedad = -0.5f, velY = 10, jump = 32, floorHeight = 400, gapSize = 350, pipenum = 5;
+	float gravedad = -0.5f, velY = 10, jump = 34, floorHeight = 400, gapSize = 350, pipenum = 5;
 	float w, h;
 
 	
@@ -63,7 +63,7 @@ public class Game extends ApplicationAdapter {
 
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("courier.ttf"));
 		FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
-		parameter.size = 36;
+		parameter.size = 46;
 		parameter.characters = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789";
 		score = generator.generateFont(parameter);
 		tapToContinue = generator.generateFont(parameter);
